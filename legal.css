@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB",
+    "Microsoft YaHei", sans-serif;
+  background: #fff6ed;
+  color: #333;
+  line-height: 1.75;
+}
+
+.legal-page {
+  min-height: 100vh;
+  padding: 24px 16px 48px;
+}
+
+.legal-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px 22px 32px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.legal-title {
+  margin: 0 0 8px;
+  font-size: 24px;
+  color: #222;
+}
+
+.legal-meta {
+  margin: 0 0 20px;
+  font-size: 13px;
+  color: #888;
+}
+
+.legal-h2 {
+  margin: 24px 0 10px;
+  font-size: 17px;
+  color: #222;
+}
+
+.legal-p {
+  margin: 0 0 12px;
+  font-size: 15px;
+}
+
+.legal-list {
+  margin: 0 0 12px;
+  padding-left: 20px;
+  font-size: 15px;
+}
+
+.legal-list li {
+  margin-bottom: 8px;
+}
+
+.legal-list--ordered {
+  list-style: decimal;
+}
+
+a {
+  color: #ff8a4c;
+}
+
+.legal-nav {
+  margin-top: 28px;
+  padding-top: 16px;
+  border-top: 1px solid #f0f0f0;
+  font-size: 14px;
+  color: #666;
+}
+
+.legal-nav a {
+  text-decoration: none;
+}
+
+.legal-nav a:hover {
+  text-decoration: underline;
+}
+
+.legal-nav span {
+  margin: 0 8px;
+}
+
+.home-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.home-links a {
+  display: block;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: #fff6ed;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+.home-links a:hover {
+  background: #ffe8d6;
+}
+
+.home-desc {
+  margin: 0;
+  font-size: 15px;
+  color: #555;
+}
