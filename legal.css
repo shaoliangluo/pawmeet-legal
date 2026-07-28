@@ -43,6 +43,12 @@ body {
   color: #222;
 }
 
+.legal-h3 {
+  margin: 18px 0 8px;
+  font-size: 15px;
+  color: #333;
+}
+
 .legal-p {
   margin: 0 0 12px;
   font-size: 15px;
