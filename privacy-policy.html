@@ -14,7 +14,7 @@
   <main class="legal-page">
     <article class="legal-inner">
       <h1 class="legal-title">PawMeet 隐私政策</h1>
-      <p class="legal-meta">最近更新日期：2026年8月1日 · 生效日期：2026年8月1日</p>
+      <p class="legal-meta">最近更新日期：2026年8月3日 · 生效日期：2026年8月3日</p>
 
       <p class="legal-p">尊敬的用户：</p>
       <p class="legal-p"><strong>PawMeet</strong>（以下简称「本应用」）由<strong>甘肃尔来思信息技术有限公司</strong>（以下简称「尔来思」或「我们」）开发并运营，向您提供宠友同城活动、互助需求、社区交流、成长记录、私信、会员及商城购物等服务。我们深知个人信息对您的重要性，将按照法律法规要求，采取相应安全保护措施保护您的个人信息。</p>
@@ -46,7 +46,7 @@
         <li>第三方登录信息：在您授权前提下，从华为账号、微信等获取的 OpenID、UnionID、昵称、头像等；</li>
         <li>资料与内容：您填写的城市、发布的活动/需求/动态、评论、私信及上传的图片、视频；</li>
         <li>城市与同城展示：您主动填写的城市信息，用于同城内容展示与推荐；本应用<strong>不申请、不获取设备 GPS / 精确定位权限</strong>；</li>
-        <li>设备与日志：设备型号、系统版本、应用版本、操作日志、崩溃信息、网络状态，以及设备标识信息（含 Android ID、OAID、IMEI、MAC 地址等，以设备实际可读取范围为限）；为消息推送与安全风控，应用及个推（UniPush）SDK 还可能收集或使用 <span class="legal-strong">Wi‑Fi 网络信息（含 SSID、BSSID）</span>；</li>
+        <li>设备与日志：设备型号、系统版本、应用版本、操作日志、崩溃信息、网络状态，以及设备标识信息（含 Android ID、OAID、IMEI、<span class="legal-strong">MAC 地址</span>等，以设备实际可读取范围为限）；为消息推送、支付风控与通道识别，应用及第三方 SDK（含个推 / UniPush、支付宝支付 SDK、DCloud 引擎等）还可能收集或使用 <span class="legal-strong">Wi‑Fi 网络信息（含 SSID、BSSID）</span>以及<span class="legal-strong">软件安装列表（已安装应用列表）</span>；</li>
         <li>交易信息：会员订单号、支付状态、权益使用情况；商城订单、商品与金额、支付与退款状态（支付密码由第三方支付机构处理，我们不收集完整支付密码）；</li>
         <li>收货与物流信息：您填写的收件人姓名、手机号、省市区与详细地址，以及为配送、查询物流所产生的运单号与物流轨迹相关信息；</li>
         <li>售后信息：您提交的售后类型、原因、说明、凭证图片，以及退货寄回时填写的快递公司与运单号等。</li>
@@ -90,6 +90,20 @@
 
       <h3 class="legal-h3">1.7 设备信息、日志与安全保障</h3>
       <p class="legal-p">为保障账号与服务安全、进行统计分析与消息推送、排查崩溃，我们可能收集：设备型号、操作系统版本、应用版本、网络状态、操作日志、崩溃日志，以及<span class="legal-strong">设备标识信息</span>（包括 Android ID、OAID、IMEI、MAC 地址等，以设备与系统实际可读取范围为限）。为保障推送到达率、识别网络环境与安全风控，应用及所接入的消息推送 SDK（含个推 / UniPush）可能收集或使用 <span class="legal-strong">Wi‑Fi 网络信息（含 SSID、BSSID）</span>。本应用基于 DCloud uni-app 开发，运行期间引擎及相关 SDK 可能按需收集上述标识与网络信息，详情亦可参阅《DCloud App 引擎隐私政策》。</p>
+      <p class="legal-p"><strong>特别明示——设备 MAC 地址、软件安装列表的收集目的、方式与范围：</strong>在您点击同意本《隐私政策》后，为实现消息推送、支付安全风控与应用稳定运行，本应用及所接入的第三方 SDK（主要包括个推 / UniPush、支付宝 App 支付 SDK、DCloud uni-app 引擎及相关组件等）可能收集下列信息。我们在此清晰说明其<strong>目的、方式与范围</strong>：</p>
+      <ul class="legal-list">
+        <li><span class="legal-strong">设备 MAC 地址</span>：<br/>
+          <strong>目的：</strong>设备识别与去重、账号与交易安全风控、反欺诈，以及推送通道建立与到达率保障；<br/>
+          <strong>方式：</strong>由相关 SDK 在设备本地读取（以操作系统与设备实际允许范围为限），经加密或脱敏后传输至对应服务端处理；本应用不会单独向无关第三方出售该信息；<br/>
+          <strong>范围：</strong>设备网卡 MAC 地址，或系统提供的等效网络硬件标识（部分新系统可能限制读取传统 MAC，则以系统实际可提供者为准）；<br/>
+          <strong>收集主体：</strong>个推（UniPush）、支付宝支付 SDK、DCloud 引擎等。</li>
+        <li><span class="legal-strong">软件安装列表（已安装应用列表）</span>：<br/>
+          <strong>目的：</strong>识别可用的厂商推送通道与推送环境、识别支付运行环境与风险、保障推送与支付功能正常可用；<br/>
+          <strong>方式：</strong>由相关 SDK 在设备本地读取已安装应用的包名 / 应用标识等信息并进行必要分析或传输；我们及合作方<strong>不会</strong>将此类信息用于与本服务无关的广告精准营销或出售；<br/>
+          <strong>范围：</strong>设备上已安装应用的包名、应用标识等列表类信息（不以展示或备份您的应用内容为目的）；<br/>
+          <strong>收集主体：</strong>个推（UniPush）、支付宝支付 SDK、DCloud 引擎等。</li>
+      </ul>
+      <p class="legal-p">上述 MAC 地址与软件安装列表仅在您同意本政策后开始收集；若您不同意本政策，将无法使用本应用完整功能，相关 SDK 亦不会据此开展上述收集。</p>
 
       <h3 class="legal-h3">1.8 客服与反馈</h3>
       <p class="legal-p">当您通过意见反馈、邮件联系我们时，我们可能收集您提交的联系方式、问题描述及必要的账号、订单信息，用于处理您的诉求。</p>
@@ -105,7 +119,7 @@
         <li><strong>网络权限：</strong>用于连接服务器，加载内容、登录、支付、商城与消息同步。</li>
         <li><strong>通知权限（如系统要求）：</strong>用于向您发送互动提醒、系统公告等通知（可在系统设置或应用内通知开关中关闭）。</li>
       </ul>
-      <p class="legal-p">本应用<strong>不申请精确定位、通讯录、通话记录、短信、麦克风常开录音、读取已安装应用列表用于非必要业务</strong>等权限。若系统或第三方 SDK 因实现支付、推送等能力涉及设备状态类权限，仅在实现对应功能所必需时使用。</p>
+      <p class="legal-p">本应用<strong>不申请精确定位、通讯录、通话记录、短信、麦克风常开录音</strong>等权限。关于<span class="legal-strong">软件安装列表</span>：本应用自身不以「获取您手机全部应用清单做画像」为目的申请权限；但为实现推送通道识别与支付安全风控，接入的第三方 SDK（如个推 / UniPush、支付宝支付 SDK、DCloud 引擎）可能在您同意本政策后按第 1.7 条所述目的、方式与范围读取软件安装列表，详情见本政策第 1.7 条与第 4.2 条。</p>
 
       <h2 class="legal-h2">三、我们如何使用 Cookie 及其他同类技术</h2>
       <p class="legal-p">本应用主要为原生 App，可能使用本地存储（如 SharedPreferences / 本地缓存）保存登录态、隐私同意状态、偏好设置等，以便您无需重复登录或重复确认。我们不会将上述技术用于本政策所述目的之外的用途。您可通过清除应用数据、退出登录等方式清除部分本地信息，但可能影响正常使用体验。</p>
@@ -119,17 +133,27 @@
 
       <p class="legal-p"><strong>第三方主体名称：</strong>支付宝(杭州)信息技术有限公司<br/>
       <strong>产品/类型：</strong>APP 支付客户端 SDK<br/>
-      <strong>共享数据类型：</strong>设备标识信息、网络信息、订单与交易相关信息等<br/>
-      <strong>使用目的/场景：</strong>帮助用户完成 App 内订单支付<br/>
+      <strong>共享数据类型：</strong>设备标识信息（含 Android ID、OAID、IMEI、<span class="legal-strong">MAC 地址</span>等，以系统可读取范围为限）、网络信息、订单与交易相关信息，以及为实现支付风控可能读取的<span class="legal-strong">软件安装列表</span>等<br/>
+      <strong>使用目的/场景：</strong>帮助用户完成 App 内订单支付，识别支付环境与风险、保障交易安全<br/>
       <strong>共享方式：</strong>SDK 本机采集 / 接口传输<br/>
+      <strong>收集时机：</strong>您同意本隐私政策后，在使用支付相关功能时或 SDK 初始化所必需时<br/>
       <strong>隐私政策：</strong><a href="https://opendocs.alipay.com/open/54/01g6qm" target="_blank" rel="noopener">支付宝 App 支付客户端 SDK 隐私政策</a></p>
 
       <p class="legal-p"><strong>第三方主体名称：</strong>每日互动股份有限公司<br/>
       <strong>产品/类型：</strong>个推消息推送 SDK / UniPush（Android）<br/>
-      <strong>共享数据类型：</strong>设备标识信息（含 OAID 等）、网络信息（含 IP、Wi‑Fi 状态及 <span class="legal-strong">SSID、BSSID</span> 等，以 SDK 与系统实际可读取范围为限）、推送相关日志等<br/>
-      <strong>使用目的/场景：</strong>向用户推送通知消息、保障推送通道稳定与到达率、安全风控<br/>
+      <strong>共享数据类型：</strong>设备标识信息（含 OAID、IMEI、<span class="legal-strong">MAC 地址</span>等）、网络信息（含 IP、Wi‑Fi 状态及 <span class="legal-strong">SSID、BSSID</span> 等，以 SDK 与系统实际可读取范围为限）、推送相关日志，以及为识别推送通道可能读取的<span class="legal-strong">软件安装列表（已安装应用列表）</span>等<br/>
+      <strong>使用目的/场景：</strong>向用户推送通知消息、识别厂商推送通道、保障推送通道稳定与到达率、安全风控<br/>
       <strong>共享方式：</strong>SDK 本机采集<br/>
+      <strong>收集时机：</strong>您同意本隐私政策后，在推送服务初始化及消息推送过程中<br/>
       <strong>隐私政策：</strong><a href="https://docs.getui.com/privacy/" target="_blank" rel="noopener">https://docs.getui.com/privacy/</a></p>
+
+      <p class="legal-p"><strong>第三方主体名称：</strong>数字天堂（北京）网络技术有限公司（DCloud）<br/>
+      <strong>产品/类型：</strong>uni-app / App 运行引擎及相关组件<br/>
+      <strong>共享数据类型：</strong>设备型号与系统信息、应用版本、网络状态、设备标识信息（含 Android ID、OAID、IMEI、<span class="legal-strong">MAC 地址</span>等，以系统可读取范围为限），以及引擎为保障运行与集成能力可能涉及的<span class="legal-strong">软件安装列表</span>等（以官方说明为准）<br/>
+      <strong>使用目的/场景：</strong>应用运行、崩溃分析、基础统计与集成推送/支付等能力所必需<br/>
+      <strong>共享方式：</strong>SDK / 引擎本机采集<br/>
+      <strong>收集时机：</strong>您同意本隐私政策后，在应用启动与运行过程中按需收集<br/>
+      <strong>隐私政策：</strong><a href="https://ask.dcloud.net.cn/protocol.html" target="_blank" rel="noopener">DCloud 用户服务协议 / 隐私相关说明</a>（以官网最新版为准）</p>
 
       <p class="legal-p"><strong>第三方主体名称：</strong>中国信息通信研究院<br/>
       <strong>产品/类型：</strong>移动智能终端补充设备标识体系统一调用 SDK<br/>
