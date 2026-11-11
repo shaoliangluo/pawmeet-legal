@@ -154,15 +154,16 @@ a {
   <main class="legal-page">
     <article class="legal-inner">
       <h1 class="legal-title">PawMeet 隐私政策</h1>
-      <p class="legal-meta">最近更新日期：2026年11月11日 · 生效日期：2026年11月11日（应用市场上架版本）</p>
+      <p class="legal-meta">最近更新日期：2026年11月11日 · 生效日期：2026年11月11日（应用市场上架版本；同日修订：按已开通 uni-AD 广告渠道完整披露 Android ID 与双清单，并强化首次启动原生隐私弹窗）</p>
 
       <p class="legal-p">尊敬的用户：</p>
       <p class="legal-p"><strong>PawMeet</strong>（以下简称「本应用」）由<strong>甘肃尔来思信息技术有限公司</strong>（以下简称「尔来思」或「我们」）开发并运营，向您提供同城交友与轻社交服务，包括发现附近的人、交友资料、兴趣标签与个人相册、社区动态、打招呼与私信、喜欢互动、会员及商城购物等。我们深知个人信息对您的重要性，将按照法律法规要求，采取相应安全保护措施保护您的个人信息。</p>
       <p class="legal-p">本《隐私政策》将帮助您了解我们在提供服务过程中如何收集、使用、存储、共享与保护您的个人信息。请您在使用本应用前仔细阅读并充分理解本政策。您点击同意、注册或继续使用，即表示您已理解并同意本政策。</p>
+      <p class="legal-p"><strong>首次启动同意机制：</strong>Android 端首次启动时，本应用将通过<strong>原生隐私政策提示框</strong>（系统模板弹窗）展示本政策要点与协议链接；在您点击「同意」之前，本应用不会初始化业务所需的第三方 SDK（含 uni-AD 及广告联盟 SDK），亦不会开始收集 Android ID 等设备标识。您亦可随时在「我的 → 账号设置」查阅<a href="personal-info-list.html">《已收集个人信息清单》</a>与<a href="third-party-share-list.html">《第三方共享个人信息清单》</a>。</p>
       <p class="legal-p">如您是未满 14 周岁的未成年人，请在监护人陪同下阅读本政策，并在监护人同意后使用本应用。</p>
-      <p class="legal-p"><strong>特别说明：</strong>本文件为独立的《隐私政策》，不作为《用户服务协议》的组成部分。开发者 / 个人信息处理者主体名称与各应用商店登记的开发者名称均为：<strong>甘肃尔来思信息技术有限公司</strong>。</p>
+      <p class="legal-p"><strong>特别说明：</strong>本文件为独立的《隐私政策》，不作为《用户服务协议》的组成部分。开发者 / 个人信息处理者主体名称与各应用商店登记的开发者名称均为：<strong>甘肃尔来思信息技术有限公司</strong>。当前上架版本通过 DCloud <strong>uni-AD</strong> 启用广告变现，已开通并可能打包集成的广告渠道包括：<strong>穿山甲、Sigmob、倍孜、聚意/聚力、迈车、中奥乐游（优推）、快手、推啊、旺脉</strong>等（以云打包实际勾选为准）。优量汇当前暂停、百度 / 华为广告等未开通渠道默认不集成。</p>
 
-      <p class="legal-p"><strong>重要提示（请重点阅读）：</strong>在您点击同意本政策后，本应用接入的第三方 SDK（个推消息推送 SDK / UniPush、支付宝 App 支付 SDK、DCloud uni-app 引擎等）会收集<strong>设备 MAC 地址</strong>与<strong>软件安装列表（已安装应用列表）</strong>。现就<strong>目的、方式、范围</strong>清晰明示如下：</p>
+      <p class="legal-p"><strong>重要提示（请重点阅读）：</strong>在您点击同意本政策后，本应用接入的第三方 SDK（个推消息推送 SDK / UniPush、支付宝 App 支付 SDK、DCloud uni-app 引擎、<strong>uni-AD 及上述广告联盟 SDK</strong> 等）会收集<strong>Android ID（ANDROID_ID）</strong>、<strong>设备 MAC 地址</strong>与<strong>软件安装列表（已安装应用列表）</strong>。现就<strong>目的、方式、范围</strong>清晰明示如下：</p>
       <table class="legal-table">
         <thead>
           <tr>
@@ -175,22 +176,29 @@ a {
         </thead>
         <tbody>
           <tr>
+            <td><strong>Android ID（ANDROID_ID）</strong></td>
+            <td>设备识别与去重、账号与交易安全风控、消息推送通道建立与到达率保障、应用运行与崩溃分析；以及广告投放、广告监测归因、反作弊与填充优化</td>
+            <td>由 SDK 通过系统接口（如 Settings.Secure.ANDROID_ID）在设备本地自行读取，加密或脱敏后传输至对应服务端</td>
+            <td>系统分配的 Android ID 字符串；不出售；广告相关使用限于广告投放 / 归因 / 反作弊，您可关闭「个性化内容推荐」以减少个性化广告偏好</td>
+            <td>个推消息推送 SDK（UniPush）、支付宝 App 支付 SDK、DCloud uni-app 引擎、uni-AD 及穿山甲 / Sigmob / 倍孜 / 快手 / 推啊 / 旺脉 / 聚力 / 优推等广告 SDK</td>
+          </tr>
+          <tr>
             <td>设备 MAC 地址</td>
-            <td>设备识别与去重；账号与交易安全风控、反欺诈；建立消息推送通道并保障到达率</td>
+            <td>设备识别与去重；账号与交易安全风控、反欺诈；建立消息推送通道并保障到达率；广告归因与反作弊</td>
             <td>由 SDK 通过系统接口在设备本地自行读取，加密或脱敏后传输至对应服务端</td>
-            <td>设备网卡 MAC 地址或系统提供的等效网络硬件标识（以系统实际可提供者为限）；不出售、不用于无关广告画像</td>
-            <td>个推消息推送 SDK（UniPush）、支付宝 App 支付 SDK、DCloud uni-app 引擎</td>
+            <td>设备网卡 MAC 地址或系统提供的等效网络硬件标识（以系统实际可提供者为限）；不出售</td>
+            <td>个推消息推送 SDK（UniPush）、支付宝 App 支付 SDK、DCloud uni-app 引擎、uni-AD 及部分广告联盟 SDK</td>
           </tr>
           <tr>
             <td>软件安装列表（已安装应用列表）</td>
-            <td>识别可用的厂商推送通道与支付运行环境，保障推送送达与支付安全可用</td>
+            <td>识别可用的厂商推送通道与支付运行环境；广告反作弊、归因与投放环境识别</td>
             <td>由 SDK 通过系统接口在设备本地自行读取已安装应用的包名 / 应用标识</td>
-            <td>已安装应用的包名、应用标识等列表类信息；不出售、不用于无关广告画像</td>
-            <td>个推消息推送 SDK（UniPush）、支付宝 App 支付 SDK、DCloud uni-app 引擎</td>
+            <td>已安装应用的包名、应用标识等列表类信息；不出售</td>
+            <td>个推消息推送 SDK（UniPush）、支付宝 App 支付 SDK、DCloud uni-app 引擎、uni-AD 及部分广告联盟 SDK</td>
           </tr>
         </tbody>
       </table>
-      <p class="legal-p">更完整说明（含各 SDK 明细、厂商推送通道、卓信 ID 等）见下文第 1.7 条、第 4.2 条。</p>
+      <p class="legal-p">更完整说明（含各 SDK 明细、厂商推送通道、广告渠道、卓信 ID 等）见下文第 1.7 条、第 4.2 条。简明对照亦可查阅<a href="personal-info-list.html">《已收集个人信息清单》</a>、<a href="third-party-share-list.html">《第三方共享个人信息清单》</a>。</p>
 
       <h2 class="legal-h2">本隐私政策概览</h2>
       <ol class="legal-toc">
@@ -259,8 +267,8 @@ a {
       <p class="legal-p">当您申请仅退款、退货退款等售后服务时，我们可能收集：售后类型、申请原因、补充说明、您上传的<span class="legal-strong">凭证图片</span>，以及退货寄回时填写的快递公司与运单号。上述信息用于审核售后、安排退货收件、办理退款与纠纷处理。凭证图片由您自愿上传；在部分售后类型下，为核实商品或物流情况，可能需要您提供说明或凭证，否则可能影响售后办理。</p>
 
       <h3 class="legal-h3">1.7 设备信息、日志与安全保障</h3>
-      <p class="legal-p">为保障账号与服务安全、进行统计分析与消息推送、排查崩溃，在您同意本政策后，我们及所接入的第三方 SDK 会收集：设备型号、操作系统版本、应用版本、网络状态、操作日志、崩溃日志，以及<span class="legal-strong">设备标识信息</span>（包括 Android ID、OAID、IMEI、<span class="legal-strong">设备 MAC 地址</span>等，以设备与系统实际可读取范围为限）。为保障推送到达率、识别网络环境与安全风控，消息推送 SDK（含个推消息推送 SDK / UniPush）会收集或使用 <span class="legal-strong">Wi‑Fi 网络信息（含 SSID、BSSID）</span>以及<span class="legal-strong">软件安装列表（已安装应用列表）</span>。本应用基于 DCloud uni-app 开发，运行期间引擎及相关 SDK 会按需收集上述标识与网络信息，详情亦可参阅《DCloud App 引擎隐私政策》。</p>
-      <p class="legal-p"><strong>特别明示——第三方 SDK 收集设备 MAC 地址、软件安装列表的目的、方式与范围：</strong>在您点击「同意」本《隐私政策》后，为实现消息推送、支付安全风控与应用稳定运行，下列第三方 SDK 会收集设备 MAC 地址与软件安装列表。我们在此按<strong>目的、方式、范围</strong>清晰告知：</p>
+      <p class="legal-p">为保障账号与服务安全、进行统计分析与消息推送、排查崩溃，并在您同意后提供广告服务，我们及所接入的第三方 SDK 会收集：设备型号、操作系统版本、应用版本、网络状态、操作日志、崩溃日志，以及<span class="legal-strong">设备标识信息</span>（包括 <span class="legal-strong">Android ID（ANDROID_ID）</span>、OAID、IMEI、<span class="legal-strong">设备 MAC 地址</span>等，以设备与系统实际可读取范围为限）。为保障推送到达率、识别网络环境与安全风控，消息推送 SDK（含个推消息推送 SDK / UniPush）会收集或使用 <span class="legal-strong">Wi‑Fi 网络信息（含 SSID、BSSID）</span>以及<span class="legal-strong">软件安装列表（已安装应用列表）</span>。本应用基于 DCloud uni-app 开发，并通过 <span class="legal-strong">uni-AD</span> 接入广告联盟 SDK；运行期间引擎及相关 SDK（含广告 SDK）会按需收集上述标识、网络信息及广告互动数据，详情亦可参阅《DCloud App 引擎隐私政策》与 <a href="https://dcloud.io/license/uni-ad.html" target="_blank" rel="noopener">uni-AD 隐私政策</a>。</p>
+      <p class="legal-p"><strong>特别明示——第三方 SDK 收集 Android ID、设备 MAC 地址、软件安装列表的目的、方式与范围：</strong>在您点击「同意」本《隐私政策》后，为实现消息推送、支付安全风控与应用稳定运行，下列第三方 SDK 会收集 Android ID、设备 MAC 地址与软件安装列表。我们在此按<strong>目的、方式、范围</strong>清晰告知：</p>
       <table class="legal-table">
         <thead>
           <tr>
@@ -273,6 +281,13 @@ a {
         </thead>
         <tbody>
           <tr>
+            <td><strong>Android ID（ANDROID_ID）</strong></td>
+            <td>设备识别与去重；账号与交易安全风控；消息推送通道建立与到达率保障；应用运行、崩溃分析与基础统计</td>
+            <td>SDK 通过系统接口（如 Settings.Secure.ANDROID_ID）在设备本地自行读取，经加密或脱敏后传输至对应服务端；本应用不会向无关第三方出售该信息；广告 SDK 仅用于广告投放 / 归因 / 反作弊</td>
+            <td>系统为应用分配的 Android ID 字符串（以操作系统实际可提供者为准）</td>
+            <td>个推消息推送 SDK（UniPush）、支付宝 App 支付 SDK、DCloud uni-app 引擎</td>
+          </tr>
+          <tr>
             <td>设备 MAC 地址</td>
             <td>设备识别与去重；账号与交易安全风控、反欺诈；建立推送通道并保障消息到达率</td>
             <td>SDK 通过系统接口在设备本地自行读取（以操作系统与设备实际允许范围为限），经加密或脱敏后传输至对应服务端；本应用不会向无关第三方出售该信息</td>
@@ -282,20 +297,20 @@ a {
           <tr>
             <td>软件安装列表（已安装应用列表）</td>
             <td>识别可用的厂商推送通道与推送环境；识别支付运行环境与风险；保障推送与支付功能正常可用</td>
-            <td>SDK 通过系统接口在设备本地自行读取已安装应用的包名 / 应用标识等信息并进行必要分析或传输；不会用于与本服务无关的广告精准营销或出售</td>
+            <td>SDK 通过系统接口在设备本地自行读取已安装应用的包名 / 应用标识等信息并进行必要分析或传输；广告场景下用于反作弊 / 归因，不会出售</td>
             <td>设备上已安装应用的包名、应用标识等列表类信息（不以展示或备份您的应用内容为目的）</td>
             <td>个推消息推送 SDK（UniPush）、支付宝 App 支付 SDK、DCloud uni-app 引擎</td>
           </tr>
         </tbody>
       </table>
-      <p class="legal-p"><strong>静默 / 后台说明：</strong>为保障消息在应用退至后台或设备锁屏时仍可送达，个推消息推送 SDK 及厂商推送通道（含 OPPO 推送 SDK 等）可能在应用处于静默或后台运行状态时，在实现推送送达所必需的范围内继续处理与推送相关的设备标识、网络状态及通道识别信息（含为实现通道识别所必需的软件安装列表相关处理）。其目的仍限于消息推送与安全风控，方式为 SDK 自行采集 / 系统通道投递，范围不超过本条与第 4.2 条所列类型。</p>
-      <p class="legal-p">上述设备 MAC 地址与软件安装列表仅在您同意本政策后开始由相关 SDK 收集；若您不同意本政策，将无法使用本应用完整功能，相关 SDK 亦不会据此开展上述收集。</p>
+      <p class="legal-p"><strong>静默 / 后台说明：</strong>为保障消息在应用退至后台或设备锁屏时仍可送达，个推消息推送 SDK 及厂商推送通道（含 OPPO 推送 SDK、vivo 推送 SDK、荣耀推送 SDK、华为推送 SDK 等）可能在应用处于静默或后台运行状态时，在实现推送送达所必需的范围内继续处理与推送相关的设备标识（含 Android ID、OAID、AAID、RegID 等）、网络状态及通道识别信息（含为实现通道识别所必需的软件安装列表相关处理）。其目的仍限于消息推送与安全风控，方式为 SDK 自行采集 / 系统通道投递，范围不超过本条与第 4.2 条所列类型。</p>
+      <p class="legal-p">上述 Android ID、设备 MAC 地址与软件安装列表仅在您同意本政策后开始由相关 SDK 收集；若您不同意本政策，将无法使用本应用完整功能，相关 SDK 亦不会据此开展上述收集。</p>
 
       <h3 class="legal-h3">1.8 客服与反馈</h3>
       <p class="legal-p">当您通过意见反馈、邮件联系我们时，我们可能收集您提交的联系方式、问题描述及必要的账号、订单信息，用于处理您的诉求。</p>
 
       <h3 class="legal-h3">1.9 个性化推荐说明</h3>
-      <p class="legal-p">我们可能基于您填写的城市、性别偏好、浏览与互动情况，向您展示发现页同城用户、社区动态及会员相关内容推荐。您可在「我的 → 账号设置」中调整城市或相关通知开关；关闭系统公告等开关后，将不再接收对应类推送提醒。我们不会将此类信息用于与本服务无关的广告精准营销。</p>
+      <p class="legal-p">我们可能基于您填写的城市、性别偏好、浏览与互动情况，向您展示发现页同城用户、社区动态及会员相关内容推荐。在您同意本政策后，uni-AD 及广告联盟 SDK 也可能基于设备标识等信息进行广告投放、归因与个性化广告推荐。您可在「我的 → 账号设置」中关闭「个性化内容推荐」；关闭后，我们将减少基于浏览与互动的内容排序偏好，并尽可能关闭个性化广告推荐（仍可能展示与个人偏好关联较弱的广告）。您亦可调整城市或关闭系统公告等通知开关。</p>
 
       <h2 class="legal-h2">二、权限调用说明</h2>
       <p class="legal-p">在提供服务过程中，我们可能在您使用对应功能时申请以下设备权限。您可拒绝授权，仅对应功能不可用；也可在系统设置中随时关闭。</p>
@@ -316,11 +331,84 @@ a {
 
       <h3 class="legal-h3">4.2 共享（含第三方 SDK）</h3>
       <p class="legal-p">我们不会出售您的个人信息。可能共享的情形包括：经您同意；为完成支付、登录、推送、云服务、物流配送与查询等向合作方提供必要信息；依法配合监管与司法要求；为保护重大合法权益所必需。接入的主要第三方如下（版本升级可能导致实际收集项变化，以其官方说明为准）。</p>
-      <p class="legal-p"><strong>关于设备 MAC 地址、软件安装列表：</strong>下列 SDK 中，个推消息推送 SDK（UniPush）、支付宝 App 支付 SDK、DCloud uni-app 引擎会在您同意本政策后收集设备 MAC 地址与软件安装列表；其<strong>目的、方式、范围</strong>以本政策文首重要提示及第 1.7 条表格为准，并在各 SDK 条目中再次列明。</p>
+      <p class="legal-p"><strong>关于 Android ID、设备 MAC 地址、软件安装列表：</strong>下列 SDK 中，个推消息推送 SDK（UniPush）、支付宝 App 支付 SDK、DCloud uni-app 引擎、uni-AD 及广告联盟 SDK 会在您同意本政策后收集 Android ID、设备 MAC 地址与软件安装列表（各广告 SDK 实际字段以官方说明为准）；其<strong>目的、方式、范围</strong>以本政策文首重要提示及第 1.7 条表格为准，并在各 SDK 条目中再次列明。</p>
+
+      <p class="legal-p"><strong>第三方主体名称：</strong>数字天堂（北京）网络技术有限公司<br/>
+      <strong>产品/类型：</strong>uni-AD 原生广告 SDK（广告聚合基础能力）<br/>
+      <strong>涉及的个人信息类型：</strong>设备品牌、型号、操作系统版本、分辨率、设备语言、时区；网络类型、IP、User Agent、BSSID/SSID；设备标识符（含 <span class="legal-strong">Android ID</span>、OAID、IMEI/MEID 等，以系统可读取为限）；运营商信息；位置相关信息；传感器；应用安装列表；广告展示/点击/转化等互动数据<br/>
+      <strong>其中 Android ID——目的：</strong>广告投放、监测归因、反作弊与聚合调度；<strong>方式：</strong>SDK 自行采集；<strong>范围：</strong>Android ID 字符串<br/>
+      <strong>使用目的/场景：</strong>向您展示广告并进行归因与反作弊<br/>
+      <strong>共享方式 / 收集方式：</strong>SDK 自行采集<br/>
+      <strong>收集时机：</strong>您同意本隐私政策后，在广告初始化与展示过程中<br/>
+      <strong>隐私政策：</strong><a href="https://dcloud.io/license/uni-ad.html" target="_blank" rel="noopener">uni-AD 隐私政策</a></p>
+
+      <p class="legal-p"><strong>第三方主体名称：</strong>北京巨量引擎网络技术有限公司等（穿山甲 / GroMore）<br/>
+      <strong>产品/类型：</strong>穿山甲广告 SDK<br/>
+      <strong>涉及的个人信息类型：</strong>设备与系统信息、Android ID、OAID、IMEI、MAC、软件列表、网络信息、传感器、粗略/精确位置相关信息等（以官方说明为准）<br/>
+      <strong>其中 Android ID——目的：</strong>广告投放、归因、反作弊；<strong>方式：</strong>SDK 自行采集；<strong>范围：</strong>Android ID 字符串<br/>
+      <strong>收集时机：</strong>您同意本隐私政策后，在广告初始化与展示过程中<br/>
+      <strong>隐私政策：</strong><a href="https://www.csjplatform.com/privacy/partner" target="_blank" rel="noopener">穿山甲隐私政策</a>（以官网最新版为准）</p>
+
+      <p class="legal-p"><strong>第三方主体名称：</strong>北京创智汇聚科技有限公司等（Sigmob）<br/>
+      <strong>产品/类型：</strong>Sigmob 广告 SDK<br/>
+      <strong>涉及的个人信息类型：</strong>Android ID、OAID、IMEI、应用安装列表、设备与网络信息、位置/传感器、广告与崩溃数据等<br/>
+      <strong>其中 Android ID——目的：</strong>广告投放、归因、反作弊；<strong>方式：</strong>SDK 自行采集；<strong>范围：</strong>Android ID 字符串<br/>
+      <strong>收集时机：</strong>您同意本隐私政策后，在广告初始化与展示过程中<br/>
+      <strong>隐私政策：</strong>以 Sigmob 官方公示的隐私政策为准</p>
+
+      <p class="legal-p"><strong>第三方主体名称：</strong>倍孜广告（AdScope）相关主体<br/>
+      <strong>产品/类型：</strong>倍孜广告 SDK<br/>
+      <strong>涉及的个人信息类型：</strong>OAID 等设备标识、设备与应用信息、网络信息、传感器、广告互动与诊断数据等<br/>
+      <strong>其中设备标识——目的：</strong>广告投放策略、归因、反作弊；<strong>方式：</strong>SDK 自行采集；<strong>范围：</strong>官方说明所列标识字段<br/>
+      <strong>收集时机：</strong>您同意本隐私政策后，在广告初始化与展示过程中<br/>
+      <strong>隐私政策：</strong>以倍孜 / AdScope 官方隐私保护声明为准</p>
+
+      <p class="legal-p"><strong>第三方主体名称：</strong>聚力阅盟等相关主体（聚意 / 聚力）<br/>
+      <strong>产品/类型：</strong>聚力广告 SDK<br/>
+      <strong>涉及的个人信息类型：</strong>设备型号、系统版本、唯一设备标识符、设备环境特征、网络/位置相关信息等<br/>
+      <strong>其中设备标识——目的：</strong>广告投放、归因、反作弊；<strong>方式：</strong>SDK 自行采集；<strong>范围：</strong>官方说明所列标识字段<br/>
+      <strong>收集时机：</strong>您同意本隐私政策后，在广告初始化与展示过程中<br/>
+      <strong>隐私政策：</strong>以聚力阅盟官方隐私保护声明为准</p>
+
+      <p class="legal-p"><strong>第三方主体名称：</strong>迈车广告相关主体<br/>
+      <strong>产品/类型：</strong>迈车广告 SDK<br/>
+      <strong>涉及的个人信息类型：</strong>设备标识、设备与网络信息、广告互动数据等（以官方说明为准）<br/>
+      <strong>其中设备标识——目的：</strong>广告投放、归因、反作弊；<strong>方式：</strong>SDK 自行采集；<strong>范围：</strong>官方说明所列标识字段<br/>
+      <strong>收集时机：</strong>您同意本隐私政策后，在广告初始化与展示过程中<br/>
+      <strong>隐私政策：</strong>以迈车官方公示为准</p>
+
+      <p class="legal-p"><strong>第三方主体名称：</strong>华夏乐游 / 优推等相关主体（中奥乐游）<br/>
+      <strong>产品/类型：</strong>优推广告 SDK<br/>
+      <strong>涉及的个人信息类型：</strong>Android ID、OAID、IMEI、MAC、软件安装列表、网络信息、传感器、位置（可选）、广告互动数据等<br/>
+      <strong>其中 Android ID——目的：</strong>广告投放、归因、反作弊；<strong>方式：</strong>SDK 自行采集；<strong>范围：</strong>Android ID 字符串<br/>
+      <strong>收集时机：</strong>您同意本隐私政策后，在广告初始化与展示过程中<br/>
+      <strong>隐私政策：</strong>以优推广告平台 SDK 隐私政策为准</p>
+
+      <p class="legal-p"><strong>第三方主体名称：</strong>北京快手广告有限公司等<br/>
+      <strong>产品/类型：</strong>快手广告联盟 SDK<br/>
+      <strong>涉及的个人信息类型：</strong>Android ID、OAID、IMEI、MAC、软件安装列表、位置/Wi‑Fi、传感器、广告互动数据等<br/>
+      <strong>其中 Android ID——目的：</strong>广告投放、归因、反作弊；<strong>方式：</strong>SDK 自行采集；<strong>范围：</strong>Android ID 字符串<br/>
+      <strong>收集时机：</strong>您同意本隐私政策后，在广告初始化与展示过程中<br/>
+      <strong>隐私政策：</strong>以快手内容联盟 / 广告联盟官方隐私协议为准</p>
+
+      <p class="legal-p"><strong>第三方主体名称：</strong>推啊广告相关主体<br/>
+      <strong>产品/类型：</strong>推啊广告 SDK<br/>
+      <strong>涉及的个人信息类型：</strong>Android ID、OAID、IMEI、应用安装列表、网络与位置相关信息等<br/>
+      <strong>其中 Android ID——目的：</strong>广告投放、归因、反作弊；<strong>方式：</strong>SDK 自行采集；<strong>范围：</strong>Android ID 字符串<br/>
+      <strong>收集时机：</strong>您同意本隐私政策后，在广告初始化与展示过程中<br/>
+      <strong>隐私政策：</strong>以推啊官方隐私协议为准</p>
+
+      <p class="legal-p"><strong>第三方主体名称：</strong>旺脉（脉盟）相关主体<br/>
+      <strong>产品/类型：</strong>旺脉广告 SDK<br/>
+      <strong>涉及的个人信息类型：</strong>Android ID、OAID、IMEI、MAC、软件安装列表、位置、传感器、广告互动数据等<br/>
+      <strong>其中 Android ID——目的：</strong>广告投放、归因、反作弊；<strong>方式：</strong>SDK 自行采集；<strong>范围：</strong>Android ID 字符串<br/>
+      <strong>收集时机：</strong>您同意本隐私政策后，在广告初始化与展示过程中<br/>
+      <strong>隐私政策：</strong>以脉盟 / 旺脉官方隐私政策为准</p>
 
       <p class="legal-p"><strong>第三方主体名称：</strong>支付宝(杭州)信息技术有限公司<br/>
       <strong>产品/类型：</strong>APP 支付客户端 SDK<br/>
       <strong>涉及的个人信息类型：</strong>设备标识信息（含 Android ID、OAID、IMEI、<span class="legal-strong">设备 MAC 地址</span>等，以系统可读取范围为限）、网络信息、订单与交易相关信息，以及为实现支付风控读取的<span class="legal-strong">软件安装列表（已安装应用列表）</span><br/>
+      <strong>其中 Android ID——目的：</strong>支付环境识别与交易安全风控、反欺诈；<strong>方式：</strong>SDK 自行采集；<strong>范围：</strong>Android ID 字符串；不用于广告精准营销<br/>
       <strong>其中设备 MAC 地址——目的：</strong>支付环境识别与交易安全风控、反欺诈；<strong>方式：</strong>SDK 自行采集；<strong>范围：</strong>MAC 或系统等效网络硬件标识<br/>
       <strong>其中软件安装列表——目的：</strong>识别支付运行环境与风险；<strong>方式：</strong>SDK 自行采集；<strong>范围：</strong>已安装应用包名 / 应用标识等<br/>
       <strong>使用目的/场景：</strong>帮助用户完成 App 内订单支付，识别支付环境与风险、保障交易安全<br/>
@@ -330,6 +418,7 @@ a {
 
       <p class="legal-p"><strong>第三方主体名称：</strong>每日互动股份有限公司<br/>
       <strong>产品/类型：</strong>个推消息推送 SDK / UniPush（Android）<br/>
+      <strong>其中 Android ID——目的：</strong>设备识别、推送通道建立与到达率保障、安全风控；<strong>方式：</strong>SDK 自行采集；<strong>范围：</strong>Android ID 字符串；不用于广告精准营销<br/>
       <strong>涉及的个人信息类型：</strong>存储的个人文件；设备信息与网络信息（必选信息：设备平台、设备厂商、设备品牌、设备型号及系统版本、OAID、AndroidID、WIFI 连接信息（SSID、BSSID）、运营商信息、DHCP；可选信息：IMEI、<span class="legal-strong">设备 MAC 地址</span>、Google Advertising ID（GAID）、Serial Number、IMSI、ICCID、IP 地址、基站信息）；位置相关信息；<span class="legal-strong">已安装应用列表（软件安装列表）</span><br/>
       <strong>其中设备 MAC 地址——目的：</strong>有效识别设备、建立推送通道、保障推送到达率与安全风控；<strong>方式：</strong>SDK 自行采集；<strong>范围：</strong>设备 MAC 地址或系统等效标识<br/>
       <strong>其中软件安装列表——目的：</strong>识别厂商推送通道与推送环境，保障推送服务可用；<strong>方式：</strong>SDK 自行采集；<strong>范围：</strong>已安装应用列表（包名 / 应用标识等）<br/>
@@ -347,35 +436,44 @@ a {
 
       <p class="legal-p"><strong>第三方主体名称：</strong>广东欢太科技有限公司<br/>
       <strong>产品/类型：</strong>OPPO 推送 SDK（UniPush 厂商离线通道）<br/>
-      <strong>涉及的个人信息类型：</strong>RegisterId、appKey、appSecret、MCS 应用包名、应用版本号、推送 SDK 版本号<br/>
+      <strong>涉及的个人信息类型：</strong>RegisterId、appKey、appSecret、MCS 应用包名、应用版本号、推送 SDK 版本号；为实现厂商通道推送，可能涉及设备标识与应用基本信息（以官方说明为准）<br/>
+      <strong>其中设备标识相关信息——目的：</strong>在 OPPO / 一加等设备上建立推送通道并保障消息到达；<strong>方式：</strong>SDK 自行采集；<strong>范围：</strong>推送注册标识及推送所必需的应用 / 设备基本信息<br/>
       <strong>使用目的/场景：</strong>在 OPPO /一加等设备上提供消息推送<br/>
       <strong>共享方式 / 收集方式：</strong>SDK 自行采集<br/>
+      <strong>收集时机：</strong>您同意本隐私政策后，在推送服务初始化及消息推送过程中（含应用后台 / 静默状态下为实现送达所必需的处理）<br/>
       <strong>隐私政策：</strong><a href="https://open.oppomobile.com/new/developmentDoc/info?id=11228" target="_blank" rel="noopener">OPUSH SDK 个人信息保护政策</a>（以官网最新版为准）</p>
 
       <p class="legal-p"><strong>第三方主体名称：</strong>维沃移动通信有限公司<br/>
       <strong>产品/类型：</strong>vivo 推送 SDK（UniPush 厂商离线通道）<br/>
-      <strong>涉及的个人信息类型：</strong>设备标识信息（如 IMEI、ANDROID ID、OAID、RegID 等）、使用推送服务的应用软件信息、网络相关信息、推送 SDK 版本号、消息到达与点击等相关状态信息等（以官方说明为准）<br/>
+      <strong>涉及的个人信息类型：</strong>应用基本信息（appid、appkey、应用包名、应用版本号、pushSDK 版本）、应用内设备标识符（regid）、设备硬件与系统基本信息；以及设备标识信息（如 IMEI、<span class="legal-strong">Android ID（ANDROID_ID）</span>、OAID 等，以官方说明与系统可读取范围为限）、网络相关信息、消息到达与点击等相关状态信息<br/>
+      <strong>其中 Android ID——目的：</strong>在 vivo 设备上建立推送通道、识别设备与保障消息到达率、统计推送接口调用成功率；<strong>方式：</strong>SDK 自行采集；<strong>范围：</strong>Android ID 字符串；不用于广告精准营销<br/>
       <strong>使用目的/场景：</strong>在 vivo 设备上提供消息推送<br/>
       <strong>共享方式 / 收集方式：</strong>SDK 自行采集<br/>
-      <strong>隐私政策：</strong><a href="https://dev.vivo.com.cn/documentCenter/doc/706" target="_blank" rel="noopener">vivo 推送隐私政策</a>（以官网最新版为准）</p>
+      <strong>收集时机：</strong>您同意本隐私政策后，在推送服务初始化及消息推送过程中（含应用后台 / 静默状态下为实现送达所必需的处理）<br/>
+      <strong>隐私政策：</strong><a href="https://dev.vivo.com.cn/documentCenter/doc/878" target="_blank" rel="noopener">vivo 推送 SDK 隐私政策</a>（以官网最新版为准）</p>
 
       <p class="legal-p"><strong>第三方主体名称：</strong>深圳荣耀软件技术有限公司<br/>
       <strong>产品/类型：</strong>荣耀推送 SDK（UniPush 厂商离线通道）<br/>
-      <strong>涉及的个人信息类型：</strong>应用信息、设备信息等推送服务所必需信息（以官方说明为准）<br/>
+      <strong>涉及的个人信息类型：</strong>应用信息、设备信息（可能含设备标识符、系统基本信息等推送服务所必需信息，以官方说明为准）<br/>
+      <strong>其中设备标识相关信息（含可能涉及的 Android ID / OAID 等）——目的：</strong>在荣耀设备上建立推送通道并保障消息到达；<strong>方式：</strong>SDK 自行采集；<strong>范围：</strong>推送所必需的设备 / 应用标识信息；不用于广告精准营销<br/>
       <strong>使用目的/场景：</strong>在荣耀设备上提供消息推送<br/>
       <strong>共享方式 / 收集方式：</strong>SDK 自行采集<br/>
+      <strong>收集时机：</strong>您同意本隐私政策后，在推送服务初始化及消息推送过程中（含应用后台 / 静默状态下为实现送达所必需的处理）<br/>
       <strong>隐私政策：</strong><a href="https://developer.honor.com/cn/docs/11002/guides/sdk-data-security" target="_blank" rel="noopener">荣耀推送 SDK 数据安全说明</a>（以官网最新版为准）</p>
 
       <p class="legal-p"><strong>第三方主体名称：</strong>华为软件技术有限公司<br/>
       <strong>产品/类型：</strong>华为推送 SDK（UniPush 厂商离线通道 / HMS）<br/>
-      <strong>涉及的个人信息类型：</strong>应用信息（应用基本信息），设备信息（AAID、设备标识符、设备硬件信息、系统基本信息、系统设置）等<br/>
+      <strong>涉及的个人信息类型：</strong>应用信息（应用基本信息），设备信息（AAID、设备标识符、设备硬件信息、系统基本信息、系统设置；可能含 <span class="legal-strong">Android ID</span> 等，以官方说明与系统可读取范围为限）等<br/>
+      <strong>其中 Android ID / AAID 等设备标识——目的：</strong>在华为设备上建立推送通道、识别推送终端并保障消息到达；<strong>方式：</strong>SDK 自行采集；<strong>范围：</strong>AAID、Android ID 等推送所必需的设备标识；不用于广告精准营销<br/>
       <strong>使用目的/场景：</strong>在华为设备上提供消息推送<br/>
       <strong>共享方式 / 收集方式：</strong>SDK 自行采集<br/>
+      <strong>收集时机：</strong>您同意本隐私政策后，在推送服务初始化及消息推送过程中（含应用后台 / 静默状态下为实现送达所必需的处理）<br/>
       <strong>隐私政策：</strong><a href="https://developer.huawei.com/consumer/cn/doc/development/HMSCore-Guides/privacy-statement-0000001050042023" target="_blank" rel="noopener">华为推送 SDK 隐私声明</a>（以官网最新版为准）</p>
 
       <p class="legal-p"><strong>第三方主体名称：</strong>数字天堂（北京）网络技术有限公司（DCloud）<br/>
       <strong>产品/类型：</strong>uni-app / App 运行引擎及相关组件（含基础统计分析能力）<br/>
       <strong>涉及的个人信息类型：</strong>设备型号与系统信息、应用版本、网络状态、设备标识信息（含 Android ID、OAID、IMEI、<span class="legal-strong">设备 MAC 地址</span>等，以系统可读取范围为限），以及引擎为保障运行与集成能力所涉及的<span class="legal-strong">软件安装列表</span>（以官方说明为准）<br/>
+      <strong>其中 Android ID——目的：</strong>应用运行、崩溃分析、基础统计与安全风控；广告相关用途见 uni-AD 及广告联盟条目；<strong>方式：</strong>SDK / 引擎自行采集；<strong>范围：</strong>Android ID 字符串<br/>
       <strong>其中设备 MAC 地址——目的：</strong>应用运行、崩溃分析、基础统计与安全风控；<strong>方式：</strong>SDK / 引擎自行采集；<strong>范围：</strong>MAC 或系统等效标识<br/>
       <strong>其中软件安装列表——目的：</strong>保障运行与集成推送 / 支付等能力；<strong>方式：</strong>SDK / 引擎自行采集；<strong>范围：</strong>已安装应用标识等（以官方说明为准）<br/>
       <strong>使用目的/场景：</strong>应用运行、崩溃分析、基础统计与集成推送 / 支付等能力所必需<br/>
@@ -399,7 +497,32 @@ a {
 
       <p class="legal-p">为完成商城发货与退货，我们还可能将收件人姓名、电话、地址等必要信息提供给合作的快递/物流服务商，或在退货场景下向您展示商家退货收件地址，仅用于寄递履约，不作其他用途。</p>
 
-      <p class="legal-p">其他可能接入的服务：DCloud/uni-app 与 uniCloud、微信开放平台（含小程序登录与微信支付）、华为账号/华为支付、阿里云内容安全、以及一键登录相关认证服务等，均仅在实现对应功能所必需范围内处理信息。</p>
+      <p class="legal-p"><strong>第三方主体名称：</strong>华为软件技术有限公司<br/>
+      <strong>产品/类型：</strong>华为账号登录 / 华为支付（如您使用鸿蒙或华为相关登录、支付能力时）<br/>
+      <strong>涉及的个人信息类型：</strong>经您授权的账号标识（如 OpenID / UnionID）、昵称、头像等；支付场景下的订单号、支付状态等交易必要信息（支付密码等由华为支付处理，我们不收集完整支付密码）<br/>
+      <strong>使用目的/场景：</strong>完成华为账号授权登录与会员 / 商城等支付<br/>
+      <strong>共享方式 / 收集方式：</strong>经您授权后的接口传输 / SDK 采集<br/>
+      <strong>收集时机：</strong>您同意本隐私政策后，在您主动使用华为账号登录或华为支付时<br/>
+      <strong>隐私政策：</strong><a href="https://consumer.huawei.com/cn/privacy/privacy-policy/" target="_blank" rel="noopener">华为消费者业务隐私声明</a>（以官网最新版为准）</p>
+
+      <p class="legal-p"><strong>第三方主体名称：</strong>中国移动 / 中国联通 / 中国电信等号卡认证服务提供方（经 DCloud 一键登录 / univerify 能力接入）<br/>
+      <strong>产品/类型：</strong>本机号码一键登录<br/>
+      <strong>涉及的个人信息类型：</strong>本机号码掩码 / 取号所必需的网络与设备信息（可能含 <span class="legal-strong">Android ID</span>、IP、运营商信息等，以实际取号能力与官方说明为准）<br/>
+      <strong>其中 Android ID——目的：</strong>本机号码一键登录的安全校验与防欺诈；<strong>方式：</strong>SDK / 认证服务采集；<strong>范围：</strong>Android ID 等取号所必需标识<br/>
+      <strong>使用目的/场景：</strong>在您主动选择「本机号码一键登录」时完成快捷登录<br/>
+      <strong>共享方式 / 收集方式：</strong>SDK / 接口传输<br/>
+      <strong>收集时机：</strong>您同意本隐私政策后，在您主动发起一键登录时<br/>
+      <strong>隐私政策：</strong>以 DCloud 一键登录及各运营商认证服务官网公示为准</p>
+
+      <p class="legal-p"><strong>第三方主体名称：</strong>阿里云计算有限公司<br/>
+      <strong>产品/类型：</strong>内容安全（Green）审核服务（服务端调用）<br/>
+      <strong>涉及的个人信息类型：</strong>您主动发布的文本、图片等 UGC 内容<br/>
+      <strong>使用目的/场景：</strong>社区动态、评论、私信等合规内容审核<br/>
+      <strong>共享方式 / 收集方式：</strong>服务端接口传输（非终端 SDK 默认采集设备标识）<br/>
+      <strong>收集时机：</strong>您同意本隐私政策后，在您发布或发送相关内容时<br/>
+      <strong>隐私政策：</strong><a href="https://terms.aliyun.com/legal-agreement/terms/suit_bu1_ali_cloud/suit_bu1_ali_cloud202107091605_83380.html" target="_blank" rel="noopener">阿里云隐私政策</a>（以官网最新版为准）</p>
+
+      <p class="legal-p">其他可能接入的服务：DCloud/uni-app 与 uniCloud、微信开放平台（含小程序登录与微信支付，仅在对应功能启用时）等，均仅在实现对应功能所必需范围内处理信息，并以官方隐私说明为准。</p>
 
       <h3 class="legal-h3">4.3 转让</h3>
       <p class="legal-p">我们不会将您的个人信息转让给任何公司、组织或个人，但经您明确同意，或在合并、收购、破产清算等情形下依法处理并要求继受方继续受本政策约束的除外。</p>
@@ -416,7 +539,7 @@ a {
 
       <h2 class="legal-h2">七、您的权利（含账号注销）</h2>
       <p class="legal-p"><strong>7.1 查询、更正、补充：</strong>您可通过「我的 → 账号设置」查询与修改昵称、头像、城市、性别、生日、简介、兴趣标签、个人相册等交友资料；可通过「我喜欢的」查看您发起的喜欢记录；可通过商城「收货地址」管理收件人、电话与地址信息；可通过「订单管理」「我的售后」查询相关交易与售后记录。会员用户可在权益范围内查看「谁看过我」。</p>
-      <p class="legal-p"><strong>7.2 撤回同意：</strong>您可在系统设置中关闭相机、相册、通知等权限；可在应用内关闭系统公告等通知开关。撤回同意不影响撤回前基于同意已开展的处理活动。</p>
+      <p class="legal-p"><strong>7.2 撤回同意：</strong>您可在系统设置中关闭相机、相册、通知等权限；可在应用内关闭系统公告等通知开关、关闭「个性化内容推荐」。您也可在「我的 → 账号设置 → 撤回隐私政策同意」中撤回对本《隐私政策》的同意；撤回后，我们将停止基于该同意继续处理个人信息，并可能无法继续为您提供完整服务（您需重新同意后方可继续使用）。撤回同意不影响撤回前基于同意已开展的处理活动。</p>
       <p class="legal-p"><strong>7.3 删除与账号注销：</strong>您可通过应用内账号注销入口申请注销账号；注销后我们将按本政策停止服务并删除或匿名化相关信息（依法保留的除外）。您也可通过本政策末尾联系方式提出删除或注销申请。</p>
       <p class="legal-p"><strong>7.4 响应：</strong>为保护您的账号安全，我们可能在处理前验证身份。我们将在 15 个工作日或法律法规要求的时限内回复。</p>
 
@@ -436,6 +559,10 @@ a {
       <p class="legal-p">我们将在 15 个工作日或法律法规要求的时限内予以回复。如您对我们的答复不满意，还可向有关监管部门投诉或通过法律途径解决。</p>
 
       <nav class="legal-nav">
+        <a href="personal-info-list.html">已收集个人信息清单</a>
+        <span>·</span>
+        <a href="third-party-share-list.html">第三方共享清单</a>
+        <span>·</span>
         <a href="service-agreement.html">用户服务协议</a>
         <span>·</span>
         <a href="index.html">返回首页</a>
