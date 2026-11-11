@@ -118,3 +118,34 @@ a {
   font-size: 15px;
   color: #555;
 }
+
+.legal-strong {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.legal-toc {
+  margin: 12px 0 20px;
+  padding-left: 1.2em;
+  line-height: 1.8;
+}
+
+.legal-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 16px;
+  font-size: 13px;
+}
+
+.legal-table th,
+.legal-table td {
+  border: 1px solid #e5e5e5;
+  padding: 8px 10px;
+  vertical-align: top;
+  text-align: left;
+}
+
+.legal-table th {
+  background: #fff6ed;
+  font-weight: 700;
+}
