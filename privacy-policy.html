@@ -154,7 +154,7 @@ a {
   <main class="legal-page">
     <article class="legal-inner">
       <h1 class="legal-title">PawMeet 隐私政策</h1>
-      <p class="legal-meta">最近更新日期：2026年11月11日 · 生效日期：2026年11月11日（应用市场上架版本；同日修订：按已开通 uni-AD 广告渠道完整披露 Android ID 与双清单，并强化首次启动原生隐私弹窗）</p>
+      <p class="legal-meta">最近更新日期：2026年11月13日 · 生效日期：2026年11月13日（应用市场上架版本；同日修订：补强个推 Wi‑Fi SSID/BSSID 目的方式范围与静默说明；修正快递100隐私政策链接；推送改为同意后手动注册）</p>
 
       <p class="legal-p">尊敬的用户：</p>
       <p class="legal-p"><strong>PawMeet</strong>（以下简称「本应用」）由<strong>甘肃尔来思信息技术有限公司</strong>（以下简称「尔来思」或「我们」）开发并运营，向您提供同城交友与轻社交服务，包括发现附近的人、交友资料、兴趣标签与个人相册、社区动态、打招呼与私信、喜欢互动、会员及商城购物等。我们深知个人信息对您的重要性，将按照法律法规要求，采取相应安全保护措施保护您的个人信息。</p>
@@ -163,7 +163,7 @@ a {
       <p class="legal-p">如您是未满 14 周岁的未成年人，请在监护人陪同下阅读本政策，并在监护人同意后使用本应用。</p>
       <p class="legal-p"><strong>特别说明：</strong>本文件为独立的《隐私政策》，不作为《用户服务协议》的组成部分。开发者 / 个人信息处理者主体名称与各应用商店登记的开发者名称均为：<strong>甘肃尔来思信息技术有限公司</strong>。当前上架版本通过 DCloud <strong>uni-AD</strong> 启用广告变现，已开通并可能打包集成的广告渠道包括：<strong>穿山甲、Sigmob、倍孜、聚意/聚力、迈车、中奥乐游（优推）、快手、推啊、旺脉</strong>等（以云打包实际勾选为准）。优量汇当前暂停、百度 / 华为广告等未开通渠道默认不集成。</p>
 
-      <p class="legal-p"><strong>重要提示（请重点阅读）：</strong>在您点击同意本政策后，本应用接入的第三方 SDK（个推消息推送 SDK / UniPush、支付宝 App 支付 SDK、DCloud uni-app 引擎、<strong>uni-AD 及上述广告联盟 SDK</strong> 等）会收集<strong>Android ID（ANDROID_ID）</strong>、<strong>设备 MAC 地址</strong>与<strong>软件安装列表（已安装应用列表）</strong>。现就<strong>目的、方式、范围</strong>清晰明示如下：</p>
+      <p class="legal-p"><strong>重要提示（请重点阅读）：</strong>在您点击同意本政策后，本应用接入的第三方 SDK（个推消息推送 SDK / UniPush、支付宝 App 支付 SDK、DCloud uni-app 引擎、<strong>uni-AD 及上述广告联盟 SDK</strong> 等）会收集<strong>Android ID（ANDROID_ID）</strong>、<strong>设备 MAC 地址</strong>、<strong>软件安装列表（已安装应用列表）</strong>，以及<strong>Wi‑Fi 连接信息（SSID、BSSID）</strong>。现就<strong>目的、方式、范围</strong>清晰明示如下：</p>
       <table class="legal-table">
         <thead>
           <tr>
@@ -195,6 +195,13 @@ a {
             <td>由 SDK 通过系统接口在设备本地自行读取已安装应用的包名 / 应用标识</td>
             <td>已安装应用的包名、应用标识等列表类信息；不出售</td>
             <td>个推消息推送 SDK（UniPush）、支付宝 App 支付 SDK、DCloud uni-app 引擎、uni-AD 及部分广告联盟 SDK</td>
+          </tr>
+          <tr>
+            <td><strong>Wi‑Fi 连接信息（SSID、BSSID）</strong></td>
+            <td>识别当前网络环境，保障消息推送通道可用与到达率，并进行与推送相关的安全风控；不用于与推送无关的画像或对外出售</td>
+            <td>由个推消息推送 SDK（UniPush）通过系统接口读取当前连接或最近连接的 Wi‑Fi 名称（SSID）与接入点标识（BSSID）</td>
+            <td>SSID、BSSID（以系统实际可提供者为限）；仅用于推送服务与安全风控</td>
+            <td>个推消息推送 SDK（UniPush）；部分广告 SDK 亦可能声明同类网络信息（以各自官方说明为准）</td>
           </tr>
         </tbody>
       </table>
@@ -303,8 +310,8 @@ a {
           </tr>
         </tbody>
       </table>
-      <p class="legal-p"><strong>静默 / 后台说明：</strong>为保障消息在应用退至后台或设备锁屏时仍可送达，个推消息推送 SDK 及厂商推送通道（含 OPPO 推送 SDK、vivo 推送 SDK、荣耀推送 SDK、华为推送 SDK 等）可能在应用处于静默或后台运行状态时，在实现推送送达所必需的范围内继续处理与推送相关的设备标识（含 Android ID、OAID、AAID、RegID 等）、网络状态及通道识别信息（含为实现通道识别所必需的软件安装列表相关处理）。其目的仍限于消息推送与安全风控，方式为 SDK 自行采集 / 系统通道投递，范围不超过本条与第 4.2 条所列类型。</p>
-      <p class="legal-p">上述 Android ID、设备 MAC 地址与软件安装列表仅在您同意本政策后开始由相关 SDK 收集；若您不同意本政策，将无法使用本应用完整功能，相关 SDK 亦不会据此开展上述收集。</p>
+      <p class="legal-p"><strong>静默 / 后台说明：</strong>为保障消息在应用退至后台或设备锁屏时仍可送达，个推消息推送 SDK 及厂商推送通道（含 OPPO 推送 SDK、vivo 推送 SDK、荣耀推送 SDK、华为推送 SDK 等）可能在应用处于静默或后台运行状态时，在实现推送送达所必需的范围内继续处理与推送相关的设备标识（含 Android ID、OAID、AAID、RegID 等）、网络状态、通道识别信息（含为实现通道识别所必需的软件安装列表相关处理），以及 <span class="legal-strong">Wi‑Fi 连接信息（SSID、BSSID）</span>。其中 SSID、BSSID 的<strong>目的</strong>为识别网络环境以保障推送通道可用与到达率及推送安全风控；<strong>方式</strong>为 SDK 自行采集；<strong>范围</strong>为当前或最近连接 Wi‑Fi 的 SSID、BSSID。上述处理仅在您同意本政策且推送服务初始化之后发生，不超出消息推送与安全风控目的。</p>
+      <p class="legal-p">上述 Android ID、设备 MAC 地址、软件安装列表与 Wi‑Fi SSID/BSSID 仅在您同意本政策后开始由相关 SDK 收集；本应用已配置推送「同意后手动注册」，不同意本政策将不会初始化个推 / UniPush。若您不同意本政策，将无法使用本应用完整功能，相关 SDK 亦不会据此开展上述收集。</p>
 
       <h3 class="legal-h3">1.8 客服与反馈</h3>
       <p class="legal-p">当您通过意见反馈、邮件联系我们时，我们可能收集您提交的联系方式、问题描述及必要的账号、订单信息，用于处理您的诉求。</p>
@@ -419,12 +426,13 @@ a {
       <p class="legal-p"><strong>第三方主体名称：</strong>每日互动股份有限公司<br/>
       <strong>产品/类型：</strong>个推消息推送 SDK / UniPush（Android）<br/>
       <strong>其中 Android ID——目的：</strong>设备识别、推送通道建立与到达率保障、安全风控；<strong>方式：</strong>SDK 自行采集；<strong>范围：</strong>Android ID 字符串；不用于广告精准营销<br/>
-      <strong>涉及的个人信息类型：</strong>存储的个人文件；设备信息与网络信息（必选信息：设备平台、设备厂商、设备品牌、设备型号及系统版本、OAID、AndroidID、WIFI 连接信息（SSID、BSSID）、运营商信息、DHCP；可选信息：IMEI、<span class="legal-strong">设备 MAC 地址</span>、Google Advertising ID（GAID）、Serial Number、IMSI、ICCID、IP 地址、基站信息）；位置相关信息；<span class="legal-strong">已安装应用列表（软件安装列表）</span><br/>
+      <strong>涉及的个人信息类型：</strong>存储的个人文件；设备信息与网络信息（必选信息：设备平台、设备厂商、设备品牌、设备型号及系统版本、OAID、AndroidID、<span class="legal-strong">WIFI 连接信息（SSID、BSSID）</span>、运营商信息、DHCP；可选信息：IMEI、<span class="legal-strong">设备 MAC 地址</span>、Google Advertising ID（GAID）、Serial Number、IMSI、ICCID、IP 地址、基站信息）；位置相关信息；<span class="legal-strong">已安装应用列表（软件安装列表）</span><br/>
+      <strong>其中 WIFI 连接信息（SSID、BSSID）——目的：</strong>识别网络环境，保障推送通道可用与消息到达率，并进行推送相关安全风控；非用于与推送无关的用户画像；<strong>方式：</strong>SDK 自行采集；<strong>范围：</strong>SSID、BSSID（以系统实际可提供者为限）<br/>
       <strong>其中设备 MAC 地址——目的：</strong>有效识别设备、建立推送通道、保障推送到达率与安全风控；<strong>方式：</strong>SDK 自行采集；<strong>范围：</strong>设备 MAC 地址或系统等效标识<br/>
       <strong>其中软件安装列表——目的：</strong>识别厂商推送通道与推送环境，保障推送服务可用；<strong>方式：</strong>SDK 自行采集；<strong>范围：</strong>已安装应用列表（包名 / 应用标识等）<br/>
       <strong>使用目的/场景：</strong>为 App 用户提供消息推送技术服务，识别厂商推送通道、保障推送通道稳定与到达率、安全风控<br/>
       <strong>共享方式 / 收集方式：</strong>SDK 自行采集<br/>
-      <strong>收集时机：</strong>您同意本隐私政策后，在推送服务初始化及消息推送过程中（含应用后台 / 静默状态下为实现送达所必需的处理）<br/>
+      <strong>收集时机：</strong>您同意本隐私政策后，由应用主动触发推送注册（手动注册模式）后，在推送服务初始化及消息推送过程中（含应用后台 / 静默状态下为实现送达所必需的处理，含 SSID、BSSID）<br/>
       <strong>隐私政策：</strong><a href="https://docs.getui.com/privacy/" target="_blank" rel="noopener">https://docs.getui.com/privacy/</a></p>
 
       <p class="legal-p"><strong>第三方主体名称：</strong>中互智安(北京)科技有限公司<br/>
@@ -493,7 +501,7 @@ a {
       <strong>涉及的个人信息类型：</strong>快递公司编码、运单号及查询所必需的订单关联信息等<br/>
       <strong>使用目的/场景：</strong>查询并展示商城订单物流轨迹、签收状态，支撑售后时效判断<br/>
       <strong>共享方式 / 收集方式：</strong>接口传输<br/>
-      <strong>隐私政策：</strong><a href="https://www.kuaidi100.com/about/privacy.shtml" target="_blank" rel="noopener">快递100 隐私政策</a>（以服务商官网最新版本为准）</p>
+      <strong>隐私政策：</strong><a href="https://www.kuaidi100.com/about/private.shtml" target="_blank" rel="noopener">https://www.kuaidi100.com/about/private.shtml</a>（快递100 隐私政策；以服务商官网最新版本为准）</p>
 
       <p class="legal-p">为完成商城发货与退货，我们还可能将收件人姓名、电话、地址等必要信息提供给合作的快递/物流服务商，或在退货场景下向您展示商家退货收件地址，仅用于寄递履约，不作其他用途。</p>
 
